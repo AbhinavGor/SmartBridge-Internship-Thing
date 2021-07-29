@@ -43,11 +43,10 @@ def upload():
 
         resp = urlopen(api + ISBN)
         book_data = json.load(resp)
-
-
-# print(get_isbn)
-        image_link = book_data['items'][0]['volumeInfo']['imageLinks']['thumbnail']
-
+        try:
+            image_link = book_data['items'][0]['volumeInfo']['imageLinks']['thumbnail']
+        except KeyError:
+            return render_template("error.html")
         prediction = model.predict(cv.transform([comment_text]))
         if round(prediction[0][0]) == 0:
             return render_template("positive_result.html", link=image_link)
