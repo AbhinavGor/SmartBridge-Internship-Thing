@@ -26,9 +26,11 @@
   <div class="card res-card">
     <div class="card-header">Your Result</div>
     <div class="card-body">
-      <!-- <h5 class="card-title text-success"><i class="far fa-check-circle"></i> Your review on the book was positive!</h5> -->
-      <h5 class="card-title text-danger"><i class="far fa-times-circle"></i> Your review on the book was negative!</h5>
-      <!-- <a href="index.html" class="btn btn-primary">Submit another review.</a> -->
+      <img src={{link}} alt="Book cover">
+
+      <h5 class="card-title text-danger"><i class="far fa-times-circle"></i> Looks like you disliked the book your
+        review on it was negative!</h5>
+
       <form action="http://localhost:8000/another_review">
         <input type="submit" class="btn btn-info" value="Submit another review.">
 
