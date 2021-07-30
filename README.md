@@ -9,3 +9,5 @@ NLP Project made as a part of the SmartBridge Externship program. The backend is
   <li>download the model from the link https://drive.google.com/drive/folders/1BwG43LPdEiZa0PO1AJ499NzhhJJBr0BH?usp=sharing and place it in the same folder as the app.py file
     <li> Have a working internet connection
 </ul>
+
+<h4> Video demo: https://drive.google.com/drive/folders/1QLoAo7TgN5G5WQDr6Z-1enUuBTAjUjzs?usp=sharing </h4>
